@@ -262,7 +262,7 @@
     </fields>
     <fields>
         <fullName>IsOffsiteAppointment</fullName>
-        <inlineHelpText>Qualquer tipo de trabalho pode ser feito remotamente.</inlineHelpText>
+        <inlineHelpText>Any type of work that can be done remotely.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>

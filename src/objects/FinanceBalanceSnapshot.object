@@ -61,48 +61,48 @@
     <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>AccountId</fullName>
-        <inlineHelpText>Conta pai da entidade de referência</inlineHelpText>
+        <inlineHelpText>Parent account of the reference entity</inlineHelpText>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>AdjustmentAmount</fullName>
-        <inlineHelpText>O ajuste que contribui para o subtotal da transação</inlineHelpText>
+        <inlineHelpText>The adjustment contributing to the transaction&apos;s subtotal</inlineHelpText>
     </fields>
     <fields>
         <fullName>Balance</fullName>
-        <inlineHelpText>Saldo final da entidade de referência do instantâneo. Herdado do saldo resultante da transação de finanças se a entidade de referência da transação de finanças é um aviso de crédito, aviso de débito, fatura, pagamento ou reembolso.</inlineHelpText>
+        <inlineHelpText>Final balance of the snapshot&apos;s reference entity. Inherited from the finance transaction&apos;s resulting balance if the finance transaction&apos;s reference entity is a credit memo, debit memo, invoice, payment, or refund.</inlineHelpText>
     </fields>
     <fields>
         <fullName>BaseCurrencyAmount</fullName>
-        <inlineHelpText>Defina esse valor com base em qualquer conversão monetária necessária para o valor total com imposto.</inlineHelpText>
+        <inlineHelpText>Define this value based on any currency conversion needed for the total amount with tax.</inlineHelpText>
     </fields>
     <fields>
         <fullName>BaseCurrencyBalance</fullName>
-        <inlineHelpText>Defina esse valor com base em qualquer conversão monetária necessária para o saldo resultante.</inlineHelpText>
+        <inlineHelpText>Define this value based on any currency conversion needed for the resulting balance.</inlineHelpText>
     </fields>
     <fields>
         <fullName>BaseCurrencyFxDate</fullName>
-        <inlineHelpText>Data usada para determinar a taxa de câmbio estrangeiro. Defina esse valor para usar mais tarde ao calcular conversões de moeda.</inlineHelpText>
+        <inlineHelpText>Date used to determine the foreign exchange rate. Define this value to use later when you calculate currency conversions.</inlineHelpText>
     </fields>
     <fields>
         <fullName>BaseCurrencyFxRate</fullName>
-        <inlineHelpText>Taxa de câmbio conforme a data FX da moeda base. Defina esse valor para usar mais tarde ao calcular conversões de moeda.</inlineHelpText>
+        <inlineHelpText>Rate of exchange according to the Base Currency FX Date. Define this value to use later when you calculate currency conversions.</inlineHelpText>
     </fields>
     <fields>
         <fullName>BaseCurrencyIsoCode</fullName>
-        <inlineHelpText>A moeda do país definida para esta conta. Defina esse valor para usar mais tarde ao calcular conversões de moeda.</inlineHelpText>
+        <inlineHelpText>Currency of the country defined for this account. Define this value to use later when you calculate currency conversions.</inlineHelpText>
     </fields>
     <fields>
         <fullName>ChargeAmount</fullName>
-        <inlineHelpText>O encargo que contribui para o subtotal da transação</inlineHelpText>
+        <inlineHelpText>The charge contributing to the transaction&apos;s subtotal</inlineHelpText>
     </fields>
     <fields>
         <fullName>DueDate</fullName>
-        <inlineHelpText>A data de vencimento da fatura</inlineHelpText>
+        <inlineHelpText>Date when the invoice is due</inlineHelpText>
     </fields>
     <fields>
         <fullName>EffectiveDate</fullName>
-        <inlineHelpText>A data em que a transação financeira entre em vigor</inlineHelpText>
+        <inlineHelpText>The date when the financial transaction takes effect</inlineHelpText>
     </fields>
     <fields>
         <fullName>EventType</fullName>
@@ -110,39 +110,39 @@
     </fields>
     <fields>
         <fullName>FinanceSystemIntegrationMode</fullName>
-        <inlineHelpText>O tipo do sistema financeiro externo usado para reconhecer a transação de finanças.</inlineHelpText>
+        <inlineHelpText>The type of the external financial system used to recognize the finance transaction.</inlineHelpText>
     </fields>
     <fields>
         <fullName>FinanceSystemIntegrationStatus</fullName>
     </fields>
     <fields>
         <fullName>FinanceSystemName</fullName>
-        <inlineHelpText>O nome do sistema financeiro externo usado para reconhecer a transação de finanças.</inlineHelpText>
+        <inlineHelpText>The name of the external financial system used to recognize the finance transaction.</inlineHelpText>
     </fields>
     <fields>
         <fullName>FinanceSystemTransactionNumber</fullName>
     </fields>
     <fields>
         <fullName>FinanceTransactionId</fullName>
-        <inlineHelpText>A transação de finanças pai para o instantâneo. Os campos do instantâneo herdam os valores da transação apenas se o tipo de entidade de referência da transação de finanças é uma fatura, um pagamento, um aviso de crédito, um aviso de débito ou um reembolso.</inlineHelpText>
+        <inlineHelpText>Parent finance transaction for the snapshot. The snapshot&apos;s fields inherit the transaction&apos;s values only if the finance transaction&apos;s reference entity type is an invoice, payment, credit memo, debit memo, or refund.</inlineHelpText>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>ImpactAmount</fullName>
-        <inlineHelpText>O impacto da transação de finanças sobre as finanças do cliente</inlineHelpText>
+        <inlineHelpText>The finance transaction&apos;s impact on the customer&apos;s finances</inlineHelpText>
     </fields>
     <fields>
         <fullName>LegalEntityId</fullName>
-        <inlineHelpText>Entidade jurídica associada à transação de finanças. Pesquisa opcional que você pode adicionar para associar a transação de finanças a regras de GL para processamento de razão externo.</inlineHelpText>
+        <inlineHelpText>Legal entity associated with the finance transaction. This is an optional lookup that you can add to associate the finance transaction to GL rules for external ledger processing.</inlineHelpText>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>OriginalEventType</fullName>
-        <inlineHelpText>O tipo de evento da transação de finanças quando a transação de finanças foi criada.</inlineHelpText>
+        <inlineHelpText>The finance transaction&apos;s event type when the finance transaction was created.</inlineHelpText>
     </fields>
     <fields>
         <fullName>OriginalReferenceEntityType</fullName>
-        <inlineHelpText>O tipo de entidade de referência da transação de finanças quando a transação de finanças foi criada.</inlineHelpText>
+        <inlineHelpText>The finance transaction&apos;s reference entity type when the finance transaction was created.</inlineHelpText>
     </fields>
     <fields>
         <fullName>OwnerId</fullName>
@@ -150,7 +150,7 @@
     </fields>
     <fields>
         <fullName>ReferenceEntityId</fullName>
-        <inlineHelpText>O objeto financeiro criado ou atualizado como resultado de uma ação do cliente</inlineHelpText>
+        <inlineHelpText>The financial object that was created or updated as a result of a customer action</inlineHelpText>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -159,19 +159,19 @@
     </fields>
     <fields>
         <fullName>Subtotal</fullName>
-        <inlineHelpText>Total do valor do encargo e ajuste. Não inclui o valor do imposto.</inlineHelpText>
+        <inlineHelpText>Total of the charge amount and adjustment. Doesn&apos;t include the tax amount.</inlineHelpText>
     </fields>
     <fields>
         <fullName>TaxAmount</fullName>
-        <inlineHelpText>O valor total do imposto para a alteração feita à entidade de referência como resultado da ação do evento</inlineHelpText>
+        <inlineHelpText>The total amount of tax for the change made to your reference entity as a result of the event action</inlineHelpText>
     </fields>
     <fields>
         <fullName>TotalAmountWithTax</fullName>
-        <inlineHelpText>O subtotal mais o valor do imposto</inlineHelpText>
+        <inlineHelpText>The subtotal plus the tax amount</inlineHelpText>
     </fields>
     <fields>
         <fullName>TransactionDate</fullName>
-        <inlineHelpText>A data em que a transação de finanças ocorreu</inlineHelpText>
+        <inlineHelpText>The date when the finance transaction occurred</inlineHelpText>
     </fields>
     <listViews>
         <fullName>mine</fullName>

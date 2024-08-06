@@ -131,7 +131,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>ContactPointType</fullName>
-        <inlineHelpText>O registro de tipo de ponto de contato associado ao tipo de canal de engajamento.</inlineHelpText>
+        <inlineHelpText>The contact point type record associated with the engagement channel type.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>

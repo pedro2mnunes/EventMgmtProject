@@ -136,7 +136,7 @@
     </fields>
     <fields>
         <fullName>BackgroundColor</fullName>
-        <inlineHelpText>Defina uma cor do segundo plano para destacar turnos na visualização da agenda.</inlineHelpText>
+        <inlineHelpText>Set a background color to highlight shifts in the schedule view.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>

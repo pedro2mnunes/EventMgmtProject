@@ -148,12 +148,12 @@
     </fields>
     <fields>
         <fullName>RedemptionLimitAllBuyers</fullName>
-        <inlineHelpText>Número de vezes que esse cupom pode ser usado no total.</inlineHelpText>
+        <inlineHelpText>Number of times this coupon can be used in total.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>RedemptionLimitPerBuyer</fullName>
-        <inlineHelpText>Número de vezes que esse cupom pode ser usado por cliente.</inlineHelpText>
+        <inlineHelpText>Number of times this coupon can be used per customer.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>

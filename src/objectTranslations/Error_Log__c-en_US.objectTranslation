@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>System Event</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>System Events</value>
+    </caseValues>
+    <fields>
+        <label><!-- Lod Date/Time --></label>
+        <name>Lod_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Details --></label>
+        <name>Log_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process Name --></label>
+        <name>Process_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Error Log Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

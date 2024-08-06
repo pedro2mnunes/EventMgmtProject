@@ -140,7 +140,7 @@
     </fields>
     <fields>
         <fullName>ImageId</fullName>
-        <inlineHelpText>Para melhores resultados, use uma imagem de 1000 px x 380 px com 72 dpi ou uma com uma proporção similar.</inlineHelpText>
+        <inlineHelpText>For best results, use a 1000 px x 380 px image at 72 dpi or one with a similar ratio.</inlineHelpText>
         <type>Lookup</type>
     </fields>
     <fields>

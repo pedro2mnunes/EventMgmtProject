@@ -97,7 +97,7 @@
     </fields>
     <fields>
         <fullName>AssociatedLineId</fullName>
-        <inlineHelpText>A solicitação que este aplicativo de fatura da nota de crédito deixou de aplicar.</inlineHelpText>
+        <inlineHelpText>The application that this credit memo invoice application has unapplied.</inlineHelpText>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -124,7 +124,7 @@
     </fields>
     <fields>
         <fullName>ImpactAmount</fullName>
-        <inlineHelpText>O impacto sobre o saldo da nota de crédito e fatura. Solicitações do tipo não aplicado têm um impacto negativo, enquanto solicitações do tipo aplicado têm um impacto positivo.</inlineHelpText>
+        <inlineHelpText>Impact on the balance of the credit memo and invoice. Unapplied-type applications have a negative impact, while Applied-type applications have a positive impact.</inlineHelpText>
     </fields>
     <fields>
         <fullName>InvoiceId</fullName>

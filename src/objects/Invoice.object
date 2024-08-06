@@ -129,7 +129,7 @@
     </fields>
     <fields>
         <fullName>InvoiceLockedDateTime</fullName>
-        <inlineHelpText>A hora em que um registro da fatura foi bloqueado.</inlineHelpText>
+        <inlineHelpText>The time at which the invoice record was locked.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -138,7 +138,7 @@
     </fields>
     <fields>
         <fullName>IsInvoiceLocked</fullName>
-        <inlineHelpText>Indica se o registro da fatura está bloqueado ou não.</inlineHelpText>
+        <inlineHelpText>Indicates whether the invoice record is locked or not.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>

@@ -130,12 +130,12 @@
     </fields>
     <fields>
         <fullName>DiscountOrder</fullName>
-        <inlineHelpText>Selecione se deseja aplicar descontos aos produtos mais caros ou mais baratos primeiro.</inlineHelpText>
+        <inlineHelpText>Select whether to apply discounts to the most expensive or least expensive products first.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>DiscountRestriction</fullName>
-        <inlineHelpText>Restrinja os produtos que podem receber desconto.</inlineHelpText>
+        <inlineHelpText>Restrict which products can be discounted.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -148,7 +148,7 @@
     </fields>
     <fields>
         <fullName>ExclusivityType</fullName>
-        <inlineHelpText>Para combinar a promoção com outras promoções, selecione Não. Para evitar a combinação da promoção com promoções da mesma classe, selecione Classe. Para que essa seja a única promoção usada para todo um pedido, selecione Global.</inlineHelpText>
+        <inlineHelpText>To combine the promotion with other promotions, select No. To prevent combining the promotion with promotions of the same class, select Class. To let it be the only promotion used for an entire order, select Global.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -169,12 +169,12 @@
     </fields>
     <fields>
         <fullName>IsTiered</fullName>
-        <inlineHelpText>Essa configuração é permanente e não pode ser alterada depois que a promoção for salva. Em vez disso, crie uma nova promoção.</inlineHelpText>
+        <inlineHelpText>This setting is permanent and can&apos;t be changed after the promotion is saved. Create a new promotion instead.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>MaximumUsageCount</fullName>
-        <inlineHelpText>Insira o número máximo de vezes que essa promoção pode se aplicar a um carrinho. O valor padrão é 1.</inlineHelpText>
+        <inlineHelpText>Enter the maximum number of times this promotion can apply to a cart. The default value is 1.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -196,7 +196,7 @@
     </fields>
     <fields>
         <fullName>QualifierCriteria</fullName>
-        <inlineHelpText>Defina se um carrinho deve cumprir os critérios para qualquer qualificador ou para todos os qualificadores</inlineHelpText>
+        <inlineHelpText>Define whether a cart must meet the criteria for any qualifier or all qualifiers</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -205,7 +205,7 @@
     </fields>
     <fields>
         <fullName>TargetCriteria</fullName>
-        <inlineHelpText>Defina se um carrinho deve cumprir os critérios para qualquer destino ou para todos os destinos.</inlineHelpText>
+        <inlineHelpText>Define whether a cart must meet the criteria for any target or all targets.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>

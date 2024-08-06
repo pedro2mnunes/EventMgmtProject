@@ -140,7 +140,7 @@
     </fields>
     <fields>
         <fullName>AttendeeLimit</fullName>
-        <inlineHelpText>250CX: é obrigatório especificar um limite de participante quando a Categoria do compromisso for do tipo Grupo.</inlineHelpText>
+        <inlineHelpText>Enter the maximum number of service appointment attendees that can attend a group service appointment. This field is mandatory if the appointment category is group.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>

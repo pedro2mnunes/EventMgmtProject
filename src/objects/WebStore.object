@@ -103,7 +103,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>DefaultLanguage</fullName>
-        <inlineHelpText>O idioma a ser usado quando o conteúdo traduzido não estiver disponível. Esse valor é configurado durante a criação da loja. Se você alterar o idioma padrão mais tarde, também deverá alterar o idioma padrão no Criador de experiências para qualquer comunidade associada.</inlineHelpText>
+        <inlineHelpText>The language to use when translated content isn&apos;t available. This value is configured during store creation. If you change the default language later, you must also change the default language in Experience Builder for any associated community.</inlineHelpText>
     </fields>
     <fields>
         <fullName>Description</fullName>
@@ -113,7 +113,7 @@
     </fields>
     <fields>
         <fullName>MaxValuesPerFacet</fullName>
-        <inlineHelpText>Defina o número máximo de valores a mostrar por filtro. Insira um valor de 1 a 100.</inlineHelpText>
+        <inlineHelpText>Set the maximum number of values to show per filter. Enter a value from 1 to 100.</inlineHelpText>
     </fields>
     <fields>
         <fullName>Name</fullName>
@@ -127,28 +127,28 @@
     </fields>
     <fields>
         <fullName>PaginationSize</fullName>
-        <inlineHelpText>Defina o número máximo de resultados a mostrar por página. Insira um valor de 1 a 100.</inlineHelpText>
+        <inlineHelpText>Set the maximum number of results to show per page. Enter a value from 1 to 100.</inlineHelpText>
     </fields>
     <fields>
         <fullName>PricingStrategy</fullName>
-        <inlineHelpText>Selecione o preço a mostrar aos compradores: o melhor preço ou os preços do catálogo de preços de maior prioridade.</inlineHelpText>
+        <inlineHelpText>Select the price to show to buyers: either the best price or the prices from the highest priority price book.</inlineHelpText>
     </fields>
     <fields>
         <fullName>ProductGrouping</fullName>
     </fields>
     <fields>
         <fullName>SortByPricebookId</fullName>
-        <inlineHelpText>Selecione um catálogo de preços ao usar resultados da pesquisa por preço.</inlineHelpText>
+        <inlineHelpText>Select a price book to use when sorting search results by price.</inlineHelpText>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>StrikethroughPricebookId</fullName>
-        <inlineHelpText>Exibe um catálogo de preços com um preço de lista original do produto e o preço com desconto do comprador.</inlineHelpText>
+        <inlineHelpText>Displays a price book with a product’s original list price and the buyer’s discounted price.</inlineHelpText>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>SupportedLanguages</fullName>
-        <inlineHelpText>Os idiomas para disponibilizar aos compradores. As opções de idioma vêm do Workbench de tradução.</inlineHelpText>
+        <inlineHelpText>The languages to make available to buyers. Language options come from Translation Workbench.</inlineHelpText>
     </fields>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>

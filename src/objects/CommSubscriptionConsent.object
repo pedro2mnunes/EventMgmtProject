@@ -136,29 +136,29 @@
     </fields>
     <fields>
         <fullName>CommSubscriptionChannelTypeId</fullName>
-        <inlineHelpText>O registro de tipo de canal da assinatura de comunicação associado ao consentimento da assinatura de comunicação.</inlineHelpText>
+        <inlineHelpText>The communication subscription channel type record associated with the communication subscription consent.</inlineHelpText>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>ConsentCapturedDateTime</fullName>
-        <inlineHelpText>Data e hora em que o consentimento foi dado.</inlineHelpText>
+        <inlineHelpText>Date and time that consent was given.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>ConsentCapturedSource</fullName>
-        <inlineHelpText>Fonte pela qual o consentimento foi capturado. Por exemplo, user@example.com ou www.example.com.</inlineHelpText>
+        <inlineHelpText>Source through which consent was captured. For example, user@example.com or www.example.com.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>ConsentGiverId</fullName>
-        <inlineHelpText>O consentimento da pessoa à assinatura da comunicação.</inlineHelpText>
+        <inlineHelpText>The person consenting to the communication subscription.</inlineHelpText>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>ContactPointId</fullName>
-        <inlineHelpText>O registro do ponto de contato associado ao consentimento de assinatura de comunicação.</inlineHelpText>
+        <inlineHelpText>The contact point record associated with the communication subscription consent.</inlineHelpText>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -169,12 +169,12 @@
     </fields>
     <fields>
         <fullName>EffectiveFromDate</fullName>
-        <inlineHelpText>Data em que o consentimento inicia.</inlineHelpText>
+        <inlineHelpText>Date when consent starts.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>EffectiveToDate</fullName>
-        <inlineHelpText>Data em que o consentimento termina.</inlineHelpText>
+        <inlineHelpText>Date when consent ends.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>

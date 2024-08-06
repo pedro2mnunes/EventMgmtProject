@@ -131,13 +131,13 @@
     <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>DataUsePurposeId</fullName>
-        <inlineHelpText>O registro de finalidade do uso dos dados associado à assinatura de comunicação.</inlineHelpText>
+        <inlineHelpText>The data use purpose record associated with the communication subscription.</inlineHelpText>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>IsDefault</fullName>
-        <inlineHelpText>Defina essa assinatura de comunicação como o padrão.</inlineHelpText>
+        <inlineHelpText>Set this communication subscription as the default.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>

@@ -141,7 +141,7 @@
     </fields>
     <fields>
         <fullName>NetCreditsApplied</fullName>
-        <inlineHelpText>Valor líquido aplicado da nota de crédito.</inlineHelpText>
+        <inlineHelpText>Net amount applied from the credit memo.</inlineHelpText>
     </fields>
     <fields>
         <fullName>OwnerId</fullName>
@@ -185,12 +185,12 @@
     </fields>
     <fields>
         <fullName>TotalCreditAmountApplied</fullName>
-        <inlineHelpText>Valor aplicado da nota de crédito a faturas.</inlineHelpText>
+        <inlineHelpText>Amount applied from the credit memo to invoices.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>TotalCreditAmountUnapplied</fullName>
-        <inlineHelpText>Valor não aplicado de faturas e devolvido para a nota de crédito.</inlineHelpText>
+        <inlineHelpText>Amount unapplied from invoices and returned to the credit memo.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
