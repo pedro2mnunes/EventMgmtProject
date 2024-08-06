@@ -1,18 +1,33 @@
-Salesforce Admin
-    Objects & Relationships
-    Sharing Rules, OWD & Roles
-    Community
-Salesforce Development
-    Apex Trigger
-    Apex Batch Apex
-    Future Method
-    Integration ( Both Apex REST & REST API )
-    Lightning Web Component - This Covers most of the lightning web component including
-    Events
-    Custom Lookup
-    Calling Apex in bot wire & imperative apex
-    Using Web Component in Community
-    Navigation & Toast Events etc.
-    Reusable Error Handling Framework
+## Salesforce Admin
+    - Objects & Relationships
+    - Sharing Rules, OWD & Roles
+    - Community
+## Salesforce Development
+    - Apex Trigger
+    - Apex Batch Apex
+    - Future Method
+    - Integration ( Both Apex REST & REST API )
+    - Lightning Web Component - This Covers most of the lightning web component including
+        - Events
+        - Custom Lookup
+        - Calling Apex in bot wire & imperative apex
+        - Using Web Component in Community
+        - Navigation & Toast Events etc.
+    - Reusable Error Handling Framework
 
-Unmanaged Package Link - https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0o000003FQoP    
+    Unmanaged Package Link - [https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0o000003FQoP](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0o000003FQoP)
+
+    Tasks (Done)
+    1. Install unnmanaged package with required objects and fields
+    2. Create new application.
+    3. Create custom theme.
+    4. Validation Rule Setup
+        - Validation Rule on Event Object
+            - If Recurring? checkbox is checked then user must need to fill Frequency field & If checkbox is unchecked then User can not select Frequency field.
+            - If Virtual is Selected as Value for Event Type field then Prevent User to Select Location on Event Record.
+            - End Date/Time must be at-least 1 day ahead of Start Date/Time ( If there is a value in End Date/Time field )
+            - If Event Type field value is In-Person then user must need to select Location on Event Record.
+        - Validation Rule on Event Attendee Object
+            - Attendee can only be associated with the Event whose End Date is in future & Event Live Checkbox is checked and Event is accepting the Attendees ( means Remaining Seats field value is not 0 )
+        - Validation Rule on Event Speaker Object
+            - Speaker can only be associated with the Event whose End Date is in future & Event Live Checkbox is checked
