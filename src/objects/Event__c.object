@@ -272,8 +272,9 @@
     <fields>
         <fullName>Name__c</fullName>
         <externalId>false</externalId>
+        <inlineHelpText>Enter a descriptive event name, up to 50 characters.</inlineHelpText>
         <label>Name</label>
-        <length>255</length>
+        <length>50</length>
         <required>true</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -390,6 +391,20 @@
 )</errorConditionFormula>
         <errorDisplayField>End_Date_Time__c</errorDisplayField>
         <errorMessage>End Date must be  greater than Start Date/Time</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Event_Name_Length</fullName>
+        <active>true</active>
+        <description>Event Name cannot exceed 50 characters.</description>
+        <errorConditionFormula>LEN(Name) &gt; 50</errorConditionFormula>
+        <errorMessage>Event Name cannot exceed 50 characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Event_Start_Date_Cannot_Be_In_The_Past</fullName>
+        <active>true</active>
+        <description>Event Start Date cannot be in the Past.</description>
+        <errorConditionFormula>Start_DateTime__c  &lt; NOW()</errorConditionFormula>
+        <errorMessage>Event Start Date cannot be in the past.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Must_Need_to_Select_Location_If_not_Virt</fullName>

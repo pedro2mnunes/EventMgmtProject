@@ -63,6 +63,7 @@
         <name>Max_Seats__c</name>
     </fields>
     <fields>
+        <help><!-- Enter a descriptive event name, up to 50 characters. --></help>
         <label><!-- Name --></label>
         <name>Name__c</name>
     </fields>
@@ -122,6 +123,14 @@
     <validationRules>
         <errorMessage><!-- End Date must be  greater than Start Date/Time --></errorMessage>
         <name>End_Date_must_be_Greater_than_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Event Name cannot exceed 50 characters. --></errorMessage>
+        <name>Event_Name_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Event Start Date cannot be in the past. --></errorMessage>
+        <name>Event_Start_Date_Cannot_Be_In_The_Past</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- You can not Select the Location if the Event is Virtual --></errorMessage>
