@@ -157,7 +157,6 @@
         <fullName>Attendee__c</fullName>
         <label>Attendee</label>
         <referenceTo>Attendee__c</referenceTo>
-        <relationshipLabel>Event Attendees</relationshipLabel>
         <relationshipName>Event_Attendees</relationshipName>
         <relationshipOrder>1</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
@@ -169,7 +168,6 @@
         <fullName>Event__c</fullName>
         <label>Event</label>
         <referenceTo>Event__c</referenceTo>
-        <relationshipLabel>Event Attendees</relationshipLabel>
         <relationshipName>Event_Attendees</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
@@ -177,7 +175,7 @@
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
-    <label>Event Attendee</label>
+    <label>Event - Attendee</label>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
@@ -191,7 +189,7 @@
         <label>Attendee #</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Event Attendees</pluralLabel>
+    <pluralLabel>Event- Attendees</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <validationRules>
