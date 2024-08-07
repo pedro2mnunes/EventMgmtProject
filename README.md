@@ -33,10 +33,55 @@
             - Attendee can only be associated with the Event whose End Date is in future & Event Live Checkbox is checked and Event is accepting the Attendees (means Remaining Seats field value is not 0)
         - Validation Rule on *Event Speaker* Object
             - Speaker can only be associated with the Event whose End Date is in future & Event Live Checkbox is checked
-    5. Duplicate Rule Setup. First define Matching Rules and then define Duplicate Rules
+    5. Duplicate Rule Setup. First define and activate Matching Rules and then define and activate Duplicate Rules
         - Speaker Object
-            - User can not create duplicate speaker record with the same Email & Phone
+            - User can not create duplicate Speaker record with the same Email & Phone
         - Attendee Object
-            - User can not Create duplicate attendee with the Same Name, Email & Phone
+            - User can not Create duplicate Sttendee with the same Name, Email & Phone
         - Event Organizer Objet
             - Apply the same rule as Speaker object for not to having duplicate Organizer in the System
+    6. Profile, User, OWD & Role Setup
+        - Profile Setup 
+            - Create 3 Profiles (clone from Standard User), the names of the profiles will be Event Organizer, Event Attendee and Speaker.
+        - User Setup
+            - Create users for the testing purpose
+        - Role Setup
+            - Create Roles (Organizer, Attendee and Speaker). All roles must report to CEO.
+        - Role Hierarchy
+            CEO
+                Organizer
+                Attendee
+                Speaker
+        - OWD Setup -
+            - Check the table for OWD below and make the changes
+            Object Permission Set-up : Please provide the objects & fields level permission at the Profile level as per the table
+below.
+            |-------------------|---------------|---------|----------|
+            | Event             | CRED          | R       | R        |
+            | Object Name       | Event Manager | Speaker | Attendee |
+            | Event - Organizer | CRE           | R       | R        |
+            | Speaker           | CRE           | CRED    | R        |
+            | Attendee          | R             | X       | CRE      |
+            | Location          | CRED          | R       | RCE      |
+            | Event - Speaker   | CRED          | RCE     | R        |
+            | Event - Attendees | CRED          | X       | RC       |
+
+            Note: C - Created, R - Read, E - Edit, D - Delete, X - No Access
+
+            Organization Wide Default:
+            | Object Name       | Organization Wide Default                                                   |
+            |-------------------|-----------------------------------------------------------------------------|
+            | Event             | Public Read Only                                                            |
+            | Event - Organizer | Private & Create a Sharing Rule to share the Event with Organizers (Role)   |
+            | Speaker           | Private & Create a Sharing Rule to share the Speakers with Organizers (Role)|
+            | Attendee          | Private & Create a Sharing Rule to share the Attendee with Organizers (Role)|
+            | Location          | Public Read Only                                                            |
+            | Event - Speaker   | Public Read Only                                                            |
+            | Event - Attendees | Public Read Only                                                            |
+            
+            Sharing Rule Setup:- As per the business requirement, we need to share every Speaker & Attendee record with Organizer
+Role. For this, you need to setup 2 Sharing Rules as per the below details.
+                Speaker Object - Create a Sharing Rule which will share the Speaker records with the Role Organizer. And the
+permission should be Read/Edit.
+                Attendee Object - Create a Sharing Rule which will share the Attendee records with the Role Organizer. And the
+permission should be Read/Edit.
