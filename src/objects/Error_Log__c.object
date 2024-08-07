@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
@@ -154,8 +154,8 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
-        <fullName>Lod_DateTime__c</fullName>
-        <label>Lod Date/Time</label>
+        <fullName>Log_Date_Time__c</fullName>
+        <label>Log Date/Time</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
@@ -210,7 +210,6 @@
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
-        <columns>Lod_DateTime__c</columns>
         <columns>Process_Name__c</columns>
         <columns>Log_Details__c</columns>
         <columns>Region__c</columns>
@@ -225,7 +224,7 @@
     <pluralLabel>System Events</pluralLabel>
     <searchLayouts>
         <customTabListAdditionalFields>Region__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Lod_DateTime__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields xsi:nil="true"/>
         <customTabListAdditionalFields>Process_Name__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>OWNER.FIRST_NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>OWNER.LAST_NAME</customTabListAdditionalFields>

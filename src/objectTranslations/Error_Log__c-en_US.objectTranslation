@@ -9,8 +9,8 @@
         <value>System Events</value>
     </caseValues>
     <fields>
-        <label><!-- Lod Date/Time --></label>
-        <name>Lod_DateTime__c</name>
+        <label><!-- Log Date/Time --></label>
+        <name>Log_Date_Time__c</name>
     </fields>
     <fields>
         <label><!-- Log Details --></label>
