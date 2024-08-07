@@ -6,7 +6,7 @@ trigger EventSpeakerTrigger on EventSpeakers__c (before insert, before update ) 
     // Step 4 - Check the Conditions and throw the Error
     
     //Step 1 -  Start
-    /* Uncomment/Remove this line
+   
     Set<Id> speakerIdsSet = new Set<Id>();
     Set<Id> eventIdsSet = new Set<Id>();
     
@@ -50,6 +50,5 @@ trigger EventSpeakerTrigger on EventSpeakers__c (before insert, before update ) 
         }
         
     } 
-    remove this line*/
     // Step 4 - End
 }

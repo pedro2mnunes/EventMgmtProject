@@ -54,21 +54,20 @@
                 Speaker
         - OWD Setup -
             - Check the table for OWD below and make the changes
-            Object Permission Set-up : Please provide the objects & fields level permission at the Profile level as per the table
-below.
-            |-------------------|---------------|---------|----------|
-            | Event             | CRED          | R       | R        |
-            | Object Name       | Event Manager | Speaker | Attendee |
-            | Event - Organizer | CRE           | R       | R        |
-            | Speaker           | CRE           | CRED    | R        |
-            | Attendee          | R             | X       | CRE      |
-            | Location          | CRED          | R       | RCE      |
-            | Event - Speaker   | CRED          | RCE     | R        |
-            | Event - Attendees | CRED          | X       | RC       |
+            Object Permission Set-up : Please provide the objects & fields level permission at the Profile level as per the table below.
+            |-------------------|----------------|---------|---------------|
+            | Object Name       |Event Organizer | Speaker |Event Attendee |
+            | Events            | CRED           | R       | R             |
+            | Event Organizers  | CRE            | R       | R             |
+            | Speakers          | CRE            | CRED    | R             |
+            | Attendees         | R              | X       | CRE           |
+            | Locations         | CRED           | R       | RCE           |
+            | Event & Speakers  | CRED           | RCE     | R             |
+            | Event Attendees   | CRED           | X       | RC            |
 
             Note: C - Created, R - Read, E - Edit, D - Delete, X - No Access
 
-            Organization Wide Default:
+            Organization Wide Default (Sharing Settings):
             | Object Name       | Organization Wide Default                                                   |
             |-------------------|-----------------------------------------------------------------------------|
             | Event             | Public Read Only                                                            |
@@ -78,10 +77,20 @@ below.
             | Location          | Public Read Only                                                            |
             | Event - Speaker   | Public Read Only                                                            |
             | Event - Attendees | Public Read Only                                                            |
+
+            Event object is not visible in Sharing Settings because this object has a Master-Detail field, meaning that this object inherits the sharing settings from its parent object.  In a master-detail relationship, the detail (child) object’s permissions are controlled by the master (parent) object. For example, if the parent object has a public read-only setting, the child object will inherit this setting. The reason you can’t see the Event Speaker and Event Attendees objects is because they are child objects of the Speaker and Attendees objects. In Salesforce, child objects are often dependent on their parent objects for visibility and access.
             
-            Sharing Rule Setup:- As per the business requirement, we need to share every Speaker & Attendee record with Organizer
+            Sharing Rule Setup: As per the business requirement, we need to share every Speaker & Attendee record with Organizer
 Role. For this, you need to setup 2 Sharing Rules as per the below details.
                 Speaker Object - Create a Sharing Rule which will share the Speaker records with the Role Organizer. And the
 permission should be Read/Edit.
                 Attendee Object - Create a Sharing Rule which will share the Attendee records with the Role Organizer. And the
 permission should be Read/Edit.
+    
+    7- Apex Class Development: - Develop a reusable Apex Class which
+     contains a method to insert the Error log Object records. This method must contains the parameters to get the dynamic details of the fields (Log Date/Tile, Log Details and Process Name)
+    
+    8 - Trigger Development (Event - Speaker Object) - Develop a Trigger on Event - Speaker object which will throw an error if the Speaker Selected on Event - Speaker Record already have an Event against his name. i.e - For a Speaker there will be only one event at a time. Reject Duplicate Bookings
+        Q1 - In which object the Trigger will be ( Event - Speaker )
+        Q2 - What are the events ( before insert , before update )
+        Output - Check the duplicate bookings and throw the error
